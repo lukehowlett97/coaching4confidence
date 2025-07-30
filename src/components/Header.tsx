@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png"; // Import the logo
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,12 +33,14 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
+          {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="relative">
-              <div className="w-12 h-14 bg-primary-dark border-2 border-accent rounded-b-full flex flex-col items-center justify-center">
-                <span className="text-accent font-bold text-sm">C4C</span>
-              </div>
-            </div>
+            {/* Option 1: Replace the shield with image */}
+            <img 
+              src={logo} 
+              alt="C4C Logo" 
+              className="h-14 w-auto"
+            />
             <div className="text-white">
               <h1 className="font-bold text-lg leading-tight">COACHING FOR</h1>
               <h2 className="font-bold text-lg leading-tight">CONFIDENCE</h2>
