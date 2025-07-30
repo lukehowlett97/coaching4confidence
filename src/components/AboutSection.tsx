@@ -12,31 +12,31 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Coach Image */}
-          <div className="relative animate-fade-in">
+          <div className="relative animate-fade-in order-2 lg:order-1">
             <div className="relative">
               <img 
                 src={coachImage} 
                 alt="Coach Oliver Markham - Professional Football Coach" 
-                className="w-full max-w-md mx-auto h-[500px] object-cover rounded-2xl shadow-custom-xl"
+                className="w-full max-w-sm sm:max-w-md mx-auto h-[400px] sm:h-[500px] object-cover rounded-2xl shadow-custom-xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-accent text-primary px-6 py-4 rounded-xl shadow-lg">
+              <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-accent text-primary px-4 py-3 sm:px-6 sm:py-4 rounded-xl shadow-lg">
                 <div className="text-center">
-                  <div className="font-bold text-2xl">FA</div>
-                  <div className="text-sm font-semibold">Licensed</div>
+                  <div className="font-bold text-xl sm:text-2xl">FA</div>
+                  <div className="text-xs sm:text-sm font-semibold">Licensed</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Coach Info */}
-          <div className="space-y-6 animate-slide-up">
-            <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-primary">
+          <div className="space-y-4 lg:space-y-6 animate-slide-up order-1 lg:order-2 text-center lg:text-left">
+            <div className="space-y-3 lg:space-y-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary">
                 Meet Coach Oliver Markham
               </h2>
-              <div className="w-20 h-1 bg-accent rounded-full"></div>
+              <div className="w-20 h-1 bg-accent rounded-full mx-auto lg:mx-0"></div>
             </div>
 
             {/* Qualifications */}
