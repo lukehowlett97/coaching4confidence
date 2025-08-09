@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Users, Target, Trophy, Heart } from "lucide-react";
+import { Users, Trophy, Heart, Facebook, MessageCircle, ShieldCheck, BadgeCheck, HeartPulse, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-kids-football.jpg";
-
+import { WA_TASTER, FB_MESSENGER } from "@/config/contacts";
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -60,20 +60,24 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button 
+                asChild
                 variant="cta" 
                 size="xl"
-                onClick={() => scrollToSection("sessions")}
                 className="rounded-full"
               >
-                View Sessions
+                <a href={WA_TASTER} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us">
+                  <span className="inline-flex items-center gap-2"><MessageCircle className="w-5 h-5" /> WhatsApp Us</span>
+                </a>
               </Button>
               <Button 
+                asChild
                 variant="outline" 
                 size="xl"
-                onClick={() => scrollToSection("contact")}
-                className="rounded-full border-primary text-primary hover:bg-primary hover:text-white"
+                className="rounded-full"
               >
-                Contact Us
+                <a href={FB_MESSENGER} target="_blank" rel="noopener noreferrer" aria-label="Message on Facebook">
+                  <span className="inline-flex items-center gap-2"><Facebook className="w-5 h-5" /> Message on Facebook</span>
+                </a>
               </Button>
             </div>
           </div>

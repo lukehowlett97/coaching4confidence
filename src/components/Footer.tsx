@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Heart, Facebook, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -24,7 +24,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-8 text-white/70">
             <span>📧 info@coachingforconfidence.com</span>
             <span>📱 07123 456789</span>
-            <span>📍 Beaulieu Community Centre, Chelmsford</span>
+            <span>📍 Central Park 3G pitch, Chelmsford</span>
+          </div>
+
+          {/* Social / Quick links */}
+          <div className="mt-4 flex items-center justify-center gap-3">
+            <a href={WA_GENERIC} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+            <a href={FB_MESSENGER} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition"><Facebook className="w-4 h-4" /> Facebook</a>
+            <a href="#safeguarding" className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition">Safeguarding Policy</a>
           </div>
 
           {/* Divider */}

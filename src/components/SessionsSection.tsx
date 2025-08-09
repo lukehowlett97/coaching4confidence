@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Clock, Calendar, CircleDollarSign, Users, Star } from "lucide-react";
-
+import { MapPin, Clock, CircleDollarSign, Users, Star } from "lucide-react";
+import { FB_MESSENGER, WA_TASTER } from "@/config/contacts";
 const SessionsSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -12,37 +12,34 @@ const SessionsSection = () => {
   const sessionDetails = [
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Location",
-      content: "Beaulieu Community Centre",
+      title: "Where",
+      content: "Central Park 3G pitch, Chelmsford",
       highlight: false
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Time",
-      content: "3:45 PM - 4:45 PM",
+      title: "When",
+      content: "Saturdays 10–11am",
       highlight: false
     },
     {
-      icon: <Calendar className="w-6 h-6" />,
-      title: "Start Date", 
-      content: "5th September 2025",
+      icon: <Users className="w-6 h-6" />,
+      title: "Ages",
+      content: "5–7 years",
       highlight: false
     },
     {
       icon: <CircleDollarSign className="w-6 h-6" />,
       title: "Price",
-      content: "From £5 per session",
+      content: "£X per session",
       highlight: true
     }
   ];
 
   const benefits = [
-    "Professional coaching tailored for young children",
-    "Focus on fun and skill development",
-    "Mixed ability groups welcome",
-    "Build confidence and make friends",
-    "Safe, supportive environment",
-    "All equipment provided"
+    "Warm-up, fun drills, mini-games",
+    "Small groups, individual attention",
+    "Parents welcome to watch",
   ];
 
   return (
@@ -52,17 +49,17 @@ const SessionsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-3 lg:mb-4">Session Information</h2>
           <div className="w-20 h-1 bg-accent rounded-full mx-auto mb-4 lg:mb-6"></div>
           <p className="text-lg sm:text-xl text-muted-foreground">
-            Join us every Friday for an hour of football fun!
+            Join us every Saturday for an hour of football fun!
           </p>
         </div>
 
         {/* Main Session Card */}
         <div className="bg-white rounded-2xl shadow-custom-xl p-4 sm:p-6 lg:p-8 mb-6 lg:mb-8 animate-slide-up">
           <div className="text-center mb-6 lg:mb-8">
-            <h3 className="text-2xl sm:text-3xl font-bold text-accent mb-2">Every Friday</h3>
-            <div className="flex items-center justify-center space-x-2 text-primary">
-              <Users className="w-5 h-5" />
-              <span className="font-semibold text-sm sm:text-base">Ages 5-7 Years</span>
+            <h3 className="text-2xl sm:text-3xl font-bold text-accent mb-2">Every Saturday</h3>
+            <div className="flex flex-wrap items-center justify-center gap-2 text-primary">
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">Ages 5–7</span>
+              <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">First session free</span>
             </div>
           </div>
 
@@ -115,14 +112,14 @@ const SessionsSection = () => {
             <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6">
               Join us for an hour of fun-filled football activities designed specifically for 5-7 year olds!
             </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              onClick={scrollToContact}
-              className="rounded-full w-full sm:w-auto"
-            >
-              Register Your Child
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button asChild variant="cta" size="xl" className="rounded-full w-full sm:w-auto">
+                <a href={WA_TASTER} target="_blank" rel="noopener noreferrer" aria-label="Book Free Taster on WhatsApp">Book Free Taster</a>
+              </Button>
+              <Button asChild variant="outline" size="xl" className="rounded-full w-full sm:w-auto">
+                <a href={FB_MESSENGER} target="_blank" rel="noopener noreferrer" aria-label="Message on Facebook">Ask a Question</a>
+              </Button>
+            </div>
           </div>
         </div>
 
