@@ -25,9 +25,9 @@ const TrustSection = () => {
           ))}
         </div>
 
-        <p className="text-center text-sm text-muted-foreground mt-6">
+        {/* <p className="text-center text-sm text-muted-foreground mt-6">
           Read our <a href="#safeguarding" className="underline story-link">Safeguarding Policy</a> in the footer.
-        </p>
+        </p> */}
       </div>
     </section>
   );

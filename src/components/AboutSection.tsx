@@ -13,8 +13,18 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+          {/* Coach Info */}
+          <div className="space-y-4 lg:space-y-6 animate-slide-up lg:order-2 text-center lg:text-left">
+            <div className="space-y-3 lg:space-y-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary">
+                Meet Coach Oliver Markham
+              </h2>
+              <div className="w-20 h-1 bg-accent rounded-full mx-auto lg:mx-0"></div>
+            </div>
+
           {/* Coach Image */}
-          <div className="relative animate-fade-in order-2 lg:order-1">
+          <div className="relative animate-fade-in lg:">
             <div className="relative">
               <img 
                 src={coachImage} 
@@ -29,15 +39,6 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-
-          {/* Coach Info */}
-          <div className="space-y-4 lg:space-y-6 animate-slide-up order-1 lg:order-2 text-center lg:text-left">
-            <div className="space-y-3 lg:space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold text-primary">
-                Meet Coach Oliver Markham
-              </h2>
-              <div className="w-20 h-1 bg-accent rounded-full mx-auto lg:mx-0"></div>
-            </div>
 
             {/* Qualifications */}
             <div className="bg-gradient-to-br from-muted/50 to-muted/30 p-6 rounded-xl border border-muted">
