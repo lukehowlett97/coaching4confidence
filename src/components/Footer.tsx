@@ -1,5 +1,5 @@
 import { Heart, Facebook, MessageCircle } from "lucide-react";
-
+import { FB_MESSENGER, WA_GENERIC } from "@/config/contacts";
 const Footer = () => {
   return (
     <footer className="bg-primary-dark text-white py-8">
