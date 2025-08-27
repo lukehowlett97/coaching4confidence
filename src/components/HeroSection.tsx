@@ -16,7 +16,7 @@ export default function HeroSection() {
       {/* Headline */}
       <h1 className="text-3xl font-extrabold leading-tight text-slate-900">
         Football Sessions for{" "}
-        <span className="text-yellow-500">5–7 Year Olds</span>
+        <span className="text-yellow-500">3–7 Year Olds</span>
       </h1>
 
       {/* Subhead */}
@@ -36,12 +36,12 @@ export default function HeroSection() {
           WhatsApp: Book FREE Taster
         </a>
         <a
-          href={FB_MSG}
+          href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 rounded-xl border border-slate-300 px-4 py-3 text-center font-semibold hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
         >
-          Message on Facebook
+          Instagram
         </a>
       </div>
       */}

@@ -12,7 +12,7 @@ const FAQSection = () => {
     },
     {
       q: "What happens in bad weather?",
-      a: "We’ll message through WhatsApp/Facebook if a session needs to be postponed due to severe weather.",
+      a: "We’ll message through WhatsApp/Instagram if a session needs to be postponed due to severe weather.",
     },
     {
       q: "Do parents stay?",
@@ -20,7 +20,7 @@ const FAQSection = () => {
     },
     {
       q: "How do I book after the free session?",
-      a: "Just message us on WhatsApp or Facebook and we’ll sort ongoing sessions and payments.",
+      a: "Just message us on WhatsApp or Instagram and we’ll sort ongoing sessions and payments.",
     },
   ];
 

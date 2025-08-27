@@ -4,9 +4,9 @@ export default function SessionsSection() {
       <div className="rounded-2xl bg-white p-4 shadow">
         <h2 className="text-xl font-bold">Sessions at a glance</h2>
         <ul className="mt-3 space-y-2 text-slate-700">
-          <li><strong>When:</strong> Saturdays 10–11am</li>
+          <li><strong>When:</strong> Friday 3:45- 4:45</li>
           <li><strong>Where:</strong> Beaulieu Community Centre, Chelmsford</li>
-          <li><strong>Ages:</strong> 5–7 years</li>
+          <li><strong>Ages:</strong> 3–7 years</li>
           <li><strong>Price:</strong> £X per session</li>
           <li><strong>First session:</strong> <span className="text-green-700 font-semibold">Free</span></li>
         </ul>

@@ -5,18 +5,6 @@ const ContactSection = () => {
 
   const contactDetails = [
     {
-      icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      content: "info@coachingforconfidence.com",
-      link: "mailto:info@coachingforconfidence.com"
-    },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      content: "07123 456789",
-      link: "tel:+447123456789"
-    },
-    {
       icon: <MapPin className="w-6 h-6" />,
       title: "Training Location",
       content: "Beaulieu Community Centre, Beaulieu Park, Chelmsford, Essex",

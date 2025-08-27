@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { FB_MESSENGER } from "@/lib/contacts";
-import { Facebook, MessageCircle } from "lucide-react";
+import { INSTAGRAM_URL } from "@/lib/contacts";
+import { Instagram, MessageCircle } from "lucide-react";
 
 const StickyCtaBar = () => {
   return (
@@ -18,10 +18,10 @@ const StickyCtaBar = () => {
           </Button>
 
 
-          <Button asChild variant="outline" size="lg" className="rounded-full" aria-label="Message on Facebook">
-            <a href={FB_MESSENGER} target="_blank" rel="noopener noreferrer">
+          <Button asChild variant="outline" size="lg" className="rounded-full" aria-label="Visit on Instagram">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2">
-                <Facebook className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </span>
             </a>
           </Button>

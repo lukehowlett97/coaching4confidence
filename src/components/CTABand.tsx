@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { FB_MESSENGER } from "@/lib/contacts";
-import { Facebook, MessageCircle } from "lucide-react";
+import { INSTAGRAM_URL } from "@/lib/contacts";
+import { Instagram, MessageCircle } from "lucide-react";
 
 const CTABand = () => {
   return (
@@ -29,7 +29,7 @@ const CTABand = () => {
             </a>
           </Button>
 
-          {/* Facebook Messenger */}
+          {/* Instagram Profile */}
           <Button
             asChild
             variant="outline"
@@ -37,14 +37,14 @@ const CTABand = () => {
             className="rounded-full w-full sm:w-auto bg-white hover:bg-slate-50"
           >
             <a
-              href={FB_MESSENGER}
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Message on Facebook"
+              aria-label="Visit on Instagram"
               className="inline-flex items-center gap-2 text-slate-900"
             >
-              <Facebook className="w-5 h-5" aria-hidden="true" />
-              <span>Message on Facebook</span>
+              <Instagram className="w-5 h-5" aria-hidden="true" />
+              <span>Instagram</span>
             </a>
           </Button>
         </div>

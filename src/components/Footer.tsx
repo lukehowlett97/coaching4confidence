@@ -1,13 +1,13 @@
 import {
   Heart,
-  Facebook,
+  Instagram,
   MessageCircle,
   Mail,
   Phone,
   MapPin,
   ShieldCheck,
 } from "lucide-react";
-import { FB_MESSENGER, WA_GENERIC } from "@/lib/contacts";
+import { INSTAGRAM_URL, WA_GENERIC } from "@/lib/contacts";
 import { VENUE_NAME, VENUE_ADDRESS, MAPS_URL } from "@/lib/location";
 
 const Footer = () => {
@@ -23,28 +23,14 @@ const Footer = () => {
             <h3 className="text-lg font-bold">COACHING FOR CONFIDENCE</h3>
           </div>
           <p className="text-white/80 text-base sm:text-lg">
-            Building confidence through football for 5–7 year olds
+            Building confidence through football for 3–7 year olds
           </p>
         </div>
 
         {/* NAP + quick actions */}
         <div className="mt-6 grid gap-4 text-white/80 sm:grid-cols-3">
           <div className="flex items-center justify-center gap-2">
-            <Mail className="h-5 w-5" aria-hidden="true" />
-            <a
-              href="mailto:info@coachingforconfidence.com"
-              className="hover:underline"
-            >
-              info@coachingforconfidence.com
-            </a>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Phone className="h-5 w-5" aria-hidden="true" />
-            <a href="tel:+447123456789" className="hover:underline">
-              +44 7123 456789
-            </a>
-          </div>
-          <div className="flex items-center justify-center gap-2">
+            
             <MapPin className="h-5 w-5" aria-hidden="true" />
             <a
               href={MAPS_URL}
@@ -70,14 +56,14 @@ const Footer = () => {
             <span>WhatsApp</span>
           </a>
           <a
-            href={FB_MESSENGER}
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 transition hover:bg-white/20"
-            aria-label="Message us on Facebook"
+            aria-label="Visit us on Instagram"
           >
-            <Facebook className="h-4 w-4" aria-hidden="true" />
-            <span>Facebook</span>
+            <Instagram className="h-4 w-4" aria-hidden="true" />
+            <span>Instagram</span>
           </a>
           <a
             href="#enquiry"
