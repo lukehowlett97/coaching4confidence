@@ -32,7 +32,7 @@ export default function LocationSection() {
 
       <ul className="mt-4 text-sm text-slate-600 list-disc list-inside space-y-1">
         <li>Parking available on-site/nearby.</li>
-        <li>Sessions run in light rain (3G), extreme weather rescheduled.</li>
+        <li>Sessions run in light rain; extreme weather is rescheduled.</li>
         <li>Google may set cookies when you use the map.</li>
       </ul>
     </section>

@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
     },
     {
       quote:
-        "Perfect for younger ones — fun games, friendly coach, and my daughter can’t wait for Saturdays.",
+        "Perfect for younger ones — fun games, friendly coach, and my daughter can’t wait for Fridays.",
       name: "Emma, Springfield",
     },
   ];

@@ -13,7 +13,7 @@ const ContactSection = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Session Times",
-      content: "Every Friday, 3:45 PM - 4:45 PM",
+      content: "Friday 3:45–4:45",
       link: null
     }
   ];

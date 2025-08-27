@@ -8,7 +8,7 @@ const FAQSection = () => {
     },
     {
       q: "What footwear should they wear?",
-      a: "Trainers or football boots with moulded studs are ideal for 3G. Bring a water bottle and comfy sportswear.",
+      a: "Trainers or football boots with moulded studs are ideal. Bring a water bottle and comfy sportswear.",
     },
     {
       q: "What happens in bad weather?",
